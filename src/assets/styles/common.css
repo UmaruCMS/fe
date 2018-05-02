@@ -1,0 +1,17 @@
+html {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+html,
+input,
+button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI',
+    'Helvetica Neue', 'Microsoft YaHei', sans-serif;
+}

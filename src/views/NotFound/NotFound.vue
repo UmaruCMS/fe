@@ -1,5 +1,5 @@
 <template>
-    <div :class="styles.root">NotFound</div>
+    <div :class="styles.root">404 啦。</div>
 </template>
 <script>
 import styles from './NotFound.module.css'
