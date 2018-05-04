@@ -1,12 +1,11 @@
 <template>
   <div :class="$style.root">
-    <NotFound></NotFound>
+    <NotFound>: ( - 该模块不存在</NotFound>
   </div>
 </template>
 
 <script>
 import {NotFound} from '@/components/errors'
-
 export default {
   components: {
     NotFound
@@ -19,7 +18,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 </style>
