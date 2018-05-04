@@ -3,12 +3,18 @@ import Router from 'vue-router';
 
 import NotFound from '@/views/NotFound';
 
+import Login from '@/views/Login'
+
 Vue.use(Router);
 
 const routes = [
   {
-    'path': '*',
-    'component': NotFound
+    path: '/login',
+    component: Login
+  },
+  {
+    path: '*',
+    component: NotFound
   }
 ];
 

@@ -1,13 +1,17 @@
 <template>
-    <div :class="styles.root">404 啦。</div>
+  <div :class="$style.root">: ( - 404 啦。</div>
 </template>
 <script>
-import styles from './NotFound.module.css'
-export default {
-  data() {
-    return {
-      styles
-    }
-  }
-}
+export default {}
 </script>
+<style module>
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 24px;
+  color: var(--disabled);
+}
+</style>

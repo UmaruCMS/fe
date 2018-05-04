@@ -1,11 +1,12 @@
 {
     "root": true,
     "extends": [
-        "plugin:vue/essential",
+        "plugin:vue/recommended",
         "eslint:recommended"
     ],
     "rules": {
         "indent": ["error", 2],
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "vue/no-parsing-error": [2, { "x-invalid-end-tag": false }]
     }
 }
