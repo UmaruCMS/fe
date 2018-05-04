@@ -1,20 +1,14 @@
 <template>
   <div :class="$style.root">
-    <Form>
-      <Form-Item>
-        <Input value="123"></Input>
-      </Form-Item>
-      <Form-Item>
-        <Input value="123"></Input>
-      </Form-Item>
-    </Form>
+    <LoginForm />
   </div>
 </template>
 
 <script>
+import LoginForm from '@/components/Login'
 export default {
-  data () {
-    
+  components: {
+    LoginForm
   }
 }
 </script>

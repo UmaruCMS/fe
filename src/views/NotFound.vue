@@ -1,9 +1,11 @@
 <template>
   <div :class="$style.root">: ( - 404 啦。</div>
 </template>
+
 <script>
 export default {}
 </script>
+
 <style module>
 .root {
   display: flex;
