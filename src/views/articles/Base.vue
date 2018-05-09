@@ -1,5 +1,5 @@
 <template>
-  <div>首页视图</div>
+  <router-view></router-view>
 </template>
 
 <script>

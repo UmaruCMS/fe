@@ -5,7 +5,11 @@ import NotFound from '@/views/NotFound';
 import SubpageNotFound from '@/views/SubpageNotFound'
 
 import Login from '@/views/Login'
+import Base from '@/views/Base'
 import Index from '@/views/Index'
+
+import Articles from '@/views/articles/Base'
+import articlesRouter from '@/router/articles'
 
 Vue.use(Router);
 
@@ -16,15 +20,20 @@ const routes = [
   },
   {
     path: '/',
-    component: Index,
+    component: Base,
     children: [
       {
         path: '',
-        component: SubpageNotFound // 首页视图
+        component: Index
       },
       {
         path: 'users',
         component: SubpageNotFound // 用户系统
+      },
+      {
+        path: 'articles',
+        component: Articles,
+        children: articlesRouter
       }
     ]
   },
