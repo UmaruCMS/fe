@@ -1,18 +1,21 @@
 <template>
-  <Menu theme="dark" width="auto" :class="$style.root">
+  <Menu width="auto" :class="$style.root">
     <UserSection />
     <ArticleSection />
+    <FileSection />
   </Menu>
 </template>
 
 <script>
 import UserSection from './UserSection'
 import ArticleSection from './ArticleSection'
+import FileSection from './FileSection'
 
 export default {
   components: {
     UserSection,
-    ArticleSection
+    ArticleSection,
+    FileSection
   }
 }
 </script>
