@@ -11,6 +11,8 @@ import Users from '@/views/users/Base'
 import usersRouter from '@/router/users'
 import Articles from '@/views/articles/Base'
 import articlesRouter from '@/router/articles'
+import Files from '@/views/files/Base'
+import filesRouter from '@/router/files'
 
 Vue.use(Router);
 
@@ -36,6 +38,11 @@ const routes = [
         path: 'articles',
         component: Articles,
         children: articlesRouter
+      },
+      {
+        path: 'files',
+        component: Files,
+        children: filesRouter
       }
     ]
   },
