@@ -1,10 +1,15 @@
 <template>
-  <Modal width="640" :value="value" title="用户信息" @input="handleToggleModal">
+  <Modal width="480" :value="value" title="用户信息" @input="handleToggleModal">
     <div :class="$style.body">
       <div :class="$style.avatar">
         <img src="../../../assets/images/avatar.jpeg" />
       </div>
       <div :class="$style.infos">
+        <div :class="$style.info">
+          <div :class="$style.key">ID</div>
+          <div :class="$style.colon">：</div>
+          <div :class="$style.value">1</div>
+        </div>
         <div :class="$style.info">
           <div :class="$style.key">姓名</div>
           <div :class="$style.colon">：</div>

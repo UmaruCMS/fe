@@ -1,5 +1,5 @@
 <template>
-  <Menu width="auto" :class="$style.root">
+  <Menu width="auto" :class="$style.root" :open-names="['user']" :active-name="activeItem">
     <UserSection />
     <ArticleSection />
     <FileSection />
@@ -16,6 +16,11 @@ export default {
     UserSection,
     ArticleSection,
     FileSection
+  },
+  data () {
+    return {
+      activeItem: 'user-users'
+    }
   }
 }
 </script>
