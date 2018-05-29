@@ -1,5 +1,5 @@
 <template>
-  <Menu width="auto" :class="$style.root" :open-names="['user']" :active-name="activeItem">
+  <Menu width="auto" :class="$style.root" :open-names="['file']" :active-name="activeItem">
     <UserSection />
     <ArticleSection />
     <FileSection />
@@ -19,7 +19,7 @@ export default {
   },
   data () {
     return {
-      activeItem: 'user-users'
+      activeItem: 'file-file'
     }
   }
 }
