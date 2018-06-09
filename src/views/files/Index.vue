@@ -6,20 +6,24 @@
     </Tabs>
     <FileTable />
     <FileModal v-model="showFileModal"></FileModal>
+    <FileUploadModal v-model="showFileUploadModal"></FileUploadModal>
   </div>
 </template>
 
 <script>
 import FileModal from '@/components/files/FileModal'
+import FileUploadModal from '@/components/files/FileUploadModal'
 import FileTable from '@/components/files/FileTable'
 export default {
   components: {
     FileModal,
-    FileTable
+    FileTable,
+    FileUploadModal
   },
   data() {
     return {
-      showFileModal: true
+      showFileModal: true,
+      showFileUploadModal: false
     }
   }
 }
