@@ -37,7 +37,7 @@
           <div :class="$style.colon">：</div>
           <div :class="$style.value">
             正常
-            <a :class="$style.disableBtn">禁用</a>
+            <a :class="$style.disableBtn">封禁</a>
           </div>
         </div>
         <div :class="$style.info">
